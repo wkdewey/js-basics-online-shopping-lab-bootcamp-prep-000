@@ -39,7 +39,7 @@ function viewCart() {
 function total() {
   var total = 0;
   for (var i in cart) {
-    total += cart[item].itemPrice;
+    total += cart[i].itemPrice;
   }
   return total;
 }
