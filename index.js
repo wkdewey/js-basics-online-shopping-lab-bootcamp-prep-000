@@ -46,7 +46,9 @@ function total() {
 
 function removeFromCart(item) {
   found = False;
-  if found === False;
+  if (found === False) {
+    return "That item is not in your cart.";
+  }
 }
 
 function placeOrder(cardNumber) {
