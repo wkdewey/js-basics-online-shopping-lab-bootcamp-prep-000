@@ -45,7 +45,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  
+  found = False;
+  if found === False;
 }
 
 function placeOrder(cardNumber) {
