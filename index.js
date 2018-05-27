@@ -24,9 +24,10 @@ function viewCart() {
     for (var item in cart) {
       statement += `${cart[item].itemName} at $${cart[item].itemPrice}`
       if (item < cart.length - 2) {
-        statement += ", "
+        statement += ", ";
       } 
-      if (item === cart.length - 2)
+      else if (item === cart.length - 2) {
+        statement += ", and "
     }
     statement += "."
   }
