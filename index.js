@@ -45,7 +45,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  found = false;
+  var found = false;
   if (found === false) {
     return "That item is not in your cart.";
   }
