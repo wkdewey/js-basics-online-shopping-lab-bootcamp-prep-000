@@ -31,9 +31,9 @@ function viewCart() {
         statement += "and ";
       }
     }
-    statement += "."
+    statement += ".";
   }
-  return statement
+  return statement;
 }
 
 function total() {
@@ -41,6 +41,7 @@ function total() {
   for (var item in cart) {
     total += cart[item].itemPrice;
   }
+  return total;
 }
 
 function removeFromCart(item) {
