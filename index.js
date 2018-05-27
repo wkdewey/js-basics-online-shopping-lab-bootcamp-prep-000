@@ -25,7 +25,7 @@ function viewCart() {
     for (var item in cart) {
       statement += `${cart[item].itemName} at $${cart[item].itemPrice}`;
       if (item < (cart.length - 1)) {
-        statement += ` item${item}, `;
+        statement += `, `;
       }
       if (item === 0) {
         statement += "and ";
