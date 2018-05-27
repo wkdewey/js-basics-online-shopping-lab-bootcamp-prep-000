@@ -22,12 +22,12 @@ function viewCart() {
     statement = "Your shopping cart is empty.";
   } else {
     statement = "In your cart, you have ";
-    for (var item in cart) {
-      statement += `${cart[item].itemName} at $${cart[item].itemPrice}`;
-      if (item < cart.length - 1) {
+    for (var i in cart) {
+      statement += `${cart[i].itemName} at $${cart[i].itemPrice}`;
+      if (i < cart.length - 1) {
         statement += `, `;
       }
-      if (parseInt(item) === cart.length - 2) {
+      if (parseInt(i) === cart.length - 2) {
         statement += "and ";
       }
     }
@@ -38,14 +38,14 @@ function viewCart() {
 
 function total() {
   var total = 0;
-  for (var item in cart) {
+  for (var i in cart) {
     total += cart[item].itemPrice;
   }
   return total;
 }
 
 function removeFromCart(item) {
-  // write your code here
+  
 }
 
 function placeOrder(cardNumber) {
