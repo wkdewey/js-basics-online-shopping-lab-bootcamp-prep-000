@@ -28,8 +28,9 @@ function viewCart() {
       } 
       else if (item === cart.length - 2) {
         statement += ", and "
-    }
+      }
     statement += "."
+    }
   }
   return statement
 }
