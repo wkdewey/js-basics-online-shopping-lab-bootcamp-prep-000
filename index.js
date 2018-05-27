@@ -46,6 +46,11 @@ function total() {
 
 function removeFromCart(item) {
   var found = false;
+  for(var i in cart) {
+    if (cart[i].itemName === item) {
+      cart[i].splice
+    }
+  }
   if (found === false) {
     return "That item is not in your cart.";
   }
